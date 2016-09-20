@@ -1,0 +1,696 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="telephone=no" name="format-detection">
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<title>中奖信息</title>
+<script>
+	window.alert = function(name){
+		var iframe = document.createElement("IFRAME");
+		iframe.style.display="none";
+		iframe.setAttribute("src", 'data:text/plain,');
+		document.documentElement.appendChild(iframe);
+		window.frames[0].window.alert(name);
+		iframe.parentNode.removeChild(iframe);
+	}
+
+</script>
+<script>
+$(function(){
+
+	$('h3').click(function(){
+		
+		var T=$(this).next('.collapse_body').css('height')
+		
+		if(T=='0px'){
+			
+			$('.open').css('display','none');
+			$('.close').css('display','block')
+			$(this).children('.close').css('display','none')
+			$(this).children('.open').css('display','block')
+			
+			}
+		if(T!=='0px'){
+			
+			$('.close').css('display','block')
+			$('.open').css('display','none')
+			$(this).children('.open').css('display','none')
+			$(this).children('.close').css('display','block')
+			
+			}
+		
+		})
+
+	});
+	
+</script>
+</head>
+
+<body>
+<div class="flex head-line">
+	<div class="flex-1">
+        <a href="Index.html">
+        	<div style="margin-left:1rem;width:1.42rem;height:2.42rem;margin-top:.8rem;border-radius:.4rem;">
+            	<img style="width:100%;height:100%;" src="Picture/back.png" />
+            </div>
+        </a>
+    </div>
+	<div class="flex-1 flex-center" >
+        <a style="font-size:1.8rem;" href="#">中奖公告</a>
+    </div>
+	<div class="flex-1" style="text-align:right;padding-right:1rem;">
+    </div>
+</div>
+<div style="height:5rem;"></div>
+
+<div id="mian">
+<!--***************************-->
+    <div class="collapseDiv"> 
+	  <h3><span class="ProDate">第1期</span>
+          <span class="open DisplayNone"></span>
+          <span class="close"></span>
+      </h3> 
+      	  
+         <div class="collapse_body">
+            <div class="collapse_content">
+            	<div class="flex collapse-flex-height">
+                	<div class="flex-1">
+                    	<div class="collapse-flex-box-left-img">
+                        	<img style="width:100%;height:100%;" src="" />
+                        </div>
+                    </div>
+                	<div class="flex-3 collapse-flex-box-right">
+                    	<dl>
+                        	<dd>（抽奖奖品）</dd>
+                            <dt><a class="point" style="color:#F39800;">40000</a>积分</dt>
+                            <dt class="black">市场价：<span class="Cost">400元</span></dt>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="collapse-flex-name-line">
+                    <span style="width:.4rem;height:1.1rem;background:#42a6f4;display:inline-block;border-radius:.4rem;"></span>
+                    中奖名单
+                </div>
+            	<div class="flex padd-m05" style="height:5.5rem;border-bottom:1px solid #E5E5E5;">
+                	<div class="flex-1 padd-l1">
+                    	<div  class="collapse-flex-NameImg">
+                        	<img style="width:100%;height:100%;" src="Picture/wrzjtouxiang.png" />
+                        </div>
+                        <div class="collapse-flex-NameMessage">
+                            <span class="UserNname">无人中奖</span>
+                            <!--
+                            <div style="margin-top:.2rem;">
+                                <span class="collapse-flex-NameMessage-Lv">
+                                    <a>Lv&nbsp;22</a>
+                                </span>
+                                <span class="collapse-flex-NameMessage-Tip"><a>富二代</a></span>
+                                <span class="collapse-flex-NameMessage-Sex"></span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                	<div class="flex-1" style="text-align:right;">
+                    	<span class="collapse-flex-NameMessage-Numb"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+       </div>
+       
+       
+       
+	</div>
+<!--***************************-->
+<!--***************************-->
+    <div class="collapseDiv"> 
+	  <h3><span class="ProDate">第1期</span>
+          <span class="open DisplayNone"></span>
+          <span class="close"></span>
+      </h3> 
+      	  
+         <div class="collapse_body">
+            <div class="collapse_content">
+            	<div class="flex collapse-flex-height">
+                	<div class="flex-1">
+                    	<div class="collapse-flex-box-left-img">
+                        	<img style="width:100%;height:100%;" src="" />
+                        </div>
+                    </div>
+                	<div class="flex-3 collapse-flex-box-right">
+                    	<dl>
+                        	<dd>（抽奖奖品）</dd>
+                            <dt><a class="point" style="color:#F39800;">40000</a>积分</dt>
+                            <dt class="black">市场价：<span class="Cost">400元</span></dt>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="collapse-flex-name-line">
+                    <span style="width:.4rem;height:1.1rem;background:#42a6f4;display:inline-block;border-radius:.4rem;"></span>
+                    中奖名单
+                </div>
+            	<div class="flex padd-m05" style="height:5.5rem;border-bottom:1px solid #E5E5E5;">
+                	<div class="flex-1 padd-l1">
+                    	<div  class="collapse-flex-NameImg">
+                        	<img style="width:100%;height:100%;" src="Picture/wrzjtouxiang.png" />
+                        </div>
+                        <div class="collapse-flex-NameMessage">
+                            <span class="UserNname">无人中奖</span>
+                            <!--
+                            <div style="margin-top:.2rem;">
+                                <span class="collapse-flex-NameMessage-Lv">
+                                    <a>Lv&nbsp;22</a>
+                                </span>
+                                <span class="collapse-flex-NameMessage-Tip"><a>富二代</a></span>
+                                <span class="collapse-flex-NameMessage-Sex"></span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                	<div class="flex-1" style="text-align:right;">
+                    	<span class="collapse-flex-NameMessage-Numb"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+       </div>
+       
+       
+       
+	</div>
+<!--***************************-->
+
+<!--***************************-->
+    <div class="collapseDiv"> 
+	  <h3><span class="ProDate">第1期</span>
+          <span class="open DisplayNone"></span>
+          <span class="close"></span>
+      </h3> 
+      	  
+         <div class="collapse_body">
+            <div class="collapse_content">
+            	<div class="flex collapse-flex-height">
+                	<div class="flex-1">
+                    	<div class="collapse-flex-box-left-img">
+                        	<img style="width:100%;height:100%;" src="" />
+                        </div>
+                    </div>
+                	<div class="flex-3 collapse-flex-box-right">
+                    	<dl>
+                        	<dd>（抽奖奖品）</dd>
+                            <dt><a class="point" style="color:#F39800;">40000</a>积分</dt>
+                            <dt class="black">市场价：<span class="Cost">400元</span></dt>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="collapse-flex-name-line">
+                    <span style="width:.4rem;height:1.1rem;background:#42a6f4;display:inline-block;border-radius:.4rem;"></span>
+                    中奖名单
+                </div>
+            	<div class="flex padd-m05" style="height:5.5rem;border-bottom:1px solid #E5E5E5;">
+                	<div class="flex-1 padd-l1">
+                    	<div  class="collapse-flex-NameImg">
+                        	<img style="width:100%;height:100%;" src="Picture/wrzjtouxiang.png" />
+                        </div>
+                        <div class="collapse-flex-NameMessage">
+                            <span class="UserNname">无人中奖</span>
+                            <!--
+                            <div style="margin-top:.2rem;">
+                                <span class="collapse-flex-NameMessage-Lv">
+                                    <a>Lv&nbsp;22</a>
+                                </span>
+                                <span class="collapse-flex-NameMessage-Tip"><a>富二代</a></span>
+                                <span class="collapse-flex-NameMessage-Sex"></span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                	<div class="flex-1" style="text-align:right;">
+                    	<span class="collapse-flex-NameMessage-Numb"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+       </div>
+       
+       
+       
+	</div>
+<!--***************************-->
+
+<!--***************************-->
+    <div class="collapseDiv"> 
+	  <h3><span class="ProDate">第1期</span>
+          <span class="open DisplayNone"></span>
+          <span class="close"></span>
+      </h3> 
+      	  
+         <div class="collapse_body">
+            <div class="collapse_content">
+            	<div class="flex collapse-flex-height">
+                	<div class="flex-1">
+                    	<div class="collapse-flex-box-left-img">
+                        	<img style="width:100%;height:100%;" src="" />
+                        </div>
+                    </div>
+                	<div class="flex-3 collapse-flex-box-right">
+                    	<dl>
+                        	<dd>（抽奖奖品）</dd>
+                            <dt><a class="point" style="color:#F39800;">40000</a>积分</dt>
+                            <dt class="black">市场价：<span class="Cost">400元</span></dt>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="collapse-flex-name-line">
+                    <span style="width:.4rem;height:1.1rem;background:#42a6f4;display:inline-block;border-radius:.4rem;"></span>
+                    中奖名单
+                </div>
+            	<div class="flex padd-m05" style="height:5.5rem;border-bottom:1px solid #E5E5E5;">
+                	<div class="flex-1 padd-l1">
+                    	<div  class="collapse-flex-NameImg">
+                        	<img style="width:100%;height:100%;" src="Picture/wrzjtouxiang.png" />
+                        </div>
+                        <div class="collapse-flex-NameMessage">
+                            <span class="UserNname">无人中奖</span>
+                            <!--
+                            <div style="margin-top:.2rem;">
+                                <span class="collapse-flex-NameMessage-Lv">
+                                    <a>Lv&nbsp;22</a>
+                                </span>
+                                <span class="collapse-flex-NameMessage-Tip"><a>富二代</a></span>
+                                <span class="collapse-flex-NameMessage-Sex"></span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                	<div class="flex-1" style="text-align:right;">
+                    	<span class="collapse-flex-NameMessage-Numb"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+       </div>
+       
+       
+       
+	</div>
+<!--***************************-->
+    
+<!--***************************-->
+    <div class="collapseDiv"> 
+	  <h3><span class="ProDate">第1期</span>
+          <span class="open DisplayNone"></span>
+          <span class="close"></span>
+      </h3> 
+      	  
+         <div class="collapse_body">
+            <div class="collapse_content">
+            	<div class="flex collapse-flex-height">
+                	<div class="flex-1">
+                    	<div class="collapse-flex-box-left-img">
+                        	<img style="width:100%;height:100%;" src="" />
+                        </div>
+                    </div>
+                	<div class="flex-3 collapse-flex-box-right">
+                    	<dl>
+                        	<dd>（抽奖奖品）</dd>
+                            <dt><a class="point" style="color:#F39800;">40000</a>积分</dt>
+                            <dt class="black">市场价：<span class="Cost">400元</span></dt>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="collapse-flex-name-line">
+                    <span style="width:.4rem;height:1.1rem;background:#42a6f4;display:inline-block;border-radius:.4rem;"></span>
+                    中奖名单
+                </div>
+            	<div class="flex padd-m05" style="height:5.5rem;border-bottom:1px solid #E5E5E5;">
+                	<div class="flex-1 padd-l1">
+                    	<div  class="collapse-flex-NameImg">
+                        	<img style="width:100%;height:100%;" src="Picture/wrzjtouxiang.png" />
+                        </div>
+                        <div class="collapse-flex-NameMessage">
+                            <span class="UserNname">无人中奖</span>
+                            <!--
+                            <div style="margin-top:.2rem;">
+                                <span class="collapse-flex-NameMessage-Lv">
+                                    <a>Lv&nbsp;22</a>
+                                </span>
+                                <span class="collapse-flex-NameMessage-Tip"><a>富二代</a></span>
+                                <span class="collapse-flex-NameMessage-Sex"></span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                	<div class="flex-1" style="text-align:right;">
+                    	<span class="collapse-flex-NameMessage-Numb"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+       </div>
+       
+       
+       
+	</div>
+<!--***************************-->
+    <div class="zanwushujv" style="width:100%;height:45rem;text-align:center;font-size:1.4rem;color:white;margin-top:5rem;display:none;">
+        <img src="Picture/zanwushujv.png" style="width:60%;" />
+    </div>
+</div>
+
+<script>
+
+$(function(){
+	
+	var Access_token=sessionStorage.getItem('Access_token');
+		
+	GetPriceMessage(Access_token);
+	
+	});
+	
+	 
+function GetPriceMessage(s){
+		$.ajax({
+			
+			type: "get",
+			url : "https://api.baoluo.com/V3/WinningRecord",
+			dateType:"json",
+			headers:{
+				'Authorization': 'Bearer '+s
+			},         
+			success:function(data){
+				
+				var s=$('.collapse_body').length;
+				
+				
+				var IData=data.Items;
+				var Done=IData[0]
+				    one=Done.length
+					_one=$('.collapse_body').eq(0);
+				
+				if(IData.length==0)
+				{
+					$('.zanwushujv').css('display','block')
+				}
+				else
+				{
+					$('.zanwushujv').css('display','none')
+				}
+				for ( var q=0;q<IData.length;q++){
+					$('.collapseDiv').eq(q).show();
+					
+				}
+				
+				for(var i=0;i<IData.length;i++){ 
+					
+					$('.ProDate').eq(i).html('第'+IData[i][0].Phase+'期');
+				}; 
+				//期数循环。
+				
+				/*第一栏*/
+				for(var c=1;c<one;c++){
+					
+					_one.append($('.collapse_content').eq(0).clone())
+					
+				}//若one循环出来的出为1，则此循环无效。
+				
+				for(var s=0;s<one;s++){
+					
+					var ImgSrc=Done[s].Icon;
+					var ImgName=Done[s].Name;
+					var point=Done[s].point;
+					var Cost=Done[s].Cost;
+					
+					var User=Done[s].User;
+					
+					
+					
+					_one.find('.collapse-flex-box-left-img').eq(s).children('img').attr('src',ImgSrc)
+					_one.find('.collapse-flex-box-right').eq(s).children('dl').children('dd').html(ImgName)
+					_one.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.point').html(point)
+					_one.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.Cost').html(Cost+'元')
+					if(User!=null){
+					_one.find('.collapse-flex-NameMessage').eq(s).children('.UserNname').html(User.Name)
+					_one.find('.collapse-flex-NameImg').eq(s).children('img').attr('src',User.Icon)
+					_one.find('.collapse-flex-NameMessage-Numb').eq(s).html(User.PhoneNumber.substring(0,3)+'****'+User.PhoneNumber.substring(7,11))
+					}
+				}
+				
+				/*第1栏over*/
+				
+				var Dtwo=IData[1]
+					two=Dtwo.length
+					_two=$('.collapse_body').eq(1);
+					
+				/*第2栏*/
+				for(var c=1;c<two;c++){
+					
+					_two.append($('.collapse_content').eq(0).clone());
+					
+				}
+				
+				for(var s=0;s<two;s++){
+					
+					var ImgSrc=Dtwo[s].Icon;
+					var ImgName=Dtwo[s].Name;
+					var point=Dtwo[s].point;
+					var Cost=Dtwo[s].Cost;
+					
+					var User=Dtwo[s].User;
+					
+					_two.find('.collapse-flex-box-left-img').eq(s).children('img').attr('src',ImgSrc);
+					_two.find('.collapse-flex-box-right').eq(s).children('dl').children('dd').html(ImgName);
+					_two.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.point').html(point)
+					_two.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.Cost').html(Cost+'元')
+					if(User!=null){
+					_two.find('.collapse-flex-NameMessage').eq(s).children('.UserNname').html(User.Name)
+					_two.find('.collapse-flex-NameImg').eq(s).children('img').attr('src',User.Icon)
+					_two.find('.collapse-flex-NameMessage-Numb').eq(s).html(User.PhoneNumber.substring(0,3)+'****'+User.PhoneNumber.substring(7,11))
+					}
+				}
+				/*第2栏 over*/
+				
+				var Dthree=IData[2]
+					three=Dthree.length
+					_three=$('.collapse_body').eq(2);
+					
+				/*第3栏*/
+				for(var c=1;c<three;c++){
+					
+					_three.append($('.collapse_content').eq(0).clone());
+				}
+				
+				for(var s=0;s<three;s++){
+					
+					var ImgSrc=Dthree[s].Icon;
+					var ImgName=Dthree[s].Name;
+					var point=Dthree[s].point;
+					var Cost=Dthree[s].Cost;
+					
+					var User=Dthree[s].User;
+					_three.find('.collapse-flex-box-left-img').eq(s).children('img').attr('src',ImgSrc);
+					_three.find('.collapse-flex-box-right').eq(s).children('dl').children('dd').html(ImgName);
+					_three.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.point').html(point)
+					_three.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.Cost').html(Cost+'元')
+					if(User!=null){
+					_three.find('.collapse-flex-NameMessage').eq(s).children('.UserNname').html(User.Name)
+					_three.find('.collapse-flex-NameImg').eq(s).children('img').attr('src',User.Icon)
+					_three.find('.collapse-flex-NameMessage-Numb').eq(s).html(User.PhoneNumber.substring(0,3)+'****'+User.PhoneNumber.substring(7,11))
+					}
+				}
+				
+				/*第3栏 over*/
+				
+				var Dfour=IData[3]
+					four=Dfour.length
+					_four=$('.collapse_body').eq(3);
+					
+				/*第4栏*/
+				for(var c=1;c<four;c++){
+					
+					_four.append($('.collapse_content').eq(0).clone());
+				}
+				
+				for(var s=0;s<four;s++){
+					
+					var ImgSrc=Dfour[s].Icon;
+					var ImgName=Dfour[s].Name;
+					var point=Dfour[s].point;
+					var Cost=Dfour[s].Cost;
+					
+					var User=Dfour[s].User;
+					_four.find('.collapse-flex-box-left-img').eq(s).children('img').attr('src',ImgSrc);
+					_four.find('.collapse-flex-box-right').eq(s).children('dl').children('dd').html(ImgName);
+					_four.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.point').html(point)
+					_four.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.Cost').html(Cost+'元')
+					if(User!=null){
+					_four.find('.collapse-flex-NameMessage').eq(s).children('.UserNname').html(User.Name)
+					_four.find('.collapse-flex-NameImg').eq(s).children('img').attr('src',User.Icon)
+					_four.find('.collapse-flex-NameMessage-Numb').eq(s).html(User.PhoneNumber.substring(0,3)+'****'+User.PhoneNumber.substring(7,11))
+					}
+				}
+				/*第4栏 over*/
+				var Dfive=IData[4]
+					five=Dfive.length
+					_five=$('.collapse_body').eq(4);
+					
+				/*第5栏*/
+				for(var c=1;c<five;c++){
+					
+					_five.append($('.collapse_content').eq(0).clone());
+				}
+				
+				for(var s=0;s<five;s++){
+					
+					var ImgSrc=Dfive[s].Icon;
+					var ImgName=Dfive[s].Name;
+					var point=Dfive[s].point;
+					var Cost=Dfive[s].Cost;
+					
+					var User=Dfive[s].User;
+					_five.find('.collapse-flex-box-left-img').eq(s).children('img').attr('src',ImgSrc);
+					_five.find('.collapse-flex-box-right').eq(s).children('dl').children('dd').html(ImgName);
+					_five.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.point').html(point)
+					_five.find('.collapse-flex-box-right').eq(s).children('dl').children('dt').children('.Cost').html(Cost+'元')
+					if(User!=null){
+					_five.find('.collapse-flex-NameMessage').eq(s).children('.UserNname').html(User.Name)
+					_five.find('.collapse-flex-NameImg').eq(s).children('img').attr('src',User.Icon)
+					_five.find('.collapse-flex-NameMessage-Numb').eq(s).html(User.PhoneNumber.substring(0,3)+'****'+User.PhoneNumber.substring(7,11))
+					}
+				}
+
+				
+			},
+			error:function () {alert('失败请重新试一次')}
+			
+			});
+		
+		};
+	
+			
+</script>
+<script>
+
+//接受三个参数，分别是折叠菜单的外包div名称，是否关闭之前的折叠，默认开启的折叠内容
+        function Collapse(className,close_prev,default_open){        
+        this._elements = [];
+        this._className = String(className);
+        this._previous = Boolean(close_prev)
+        this._default = typeof(default_open)==="number" ? default_open: -1
+        this.getCurrent  
+        this.init();
+    }
+
+    //收集所有折叠菜单的div
+    Collapse.prototype.collectElementbyClass = function(){
+        this._elements = [];
+        var allelements = document.getElementsByTagName("div");
+
+        for(var i=0;i<allelements.length;i++){
+            var collapse_div = allelements[i];
+            if (typeof collapse_div.className === "string" && collapse_div.className === this._className){
+
+                var h3s = collapse_div.getElementsByTagName("h3");
+                var collapse_body = collapse_div.getElementsByClassName("collapse_body");
+                if(h3s.length === 1 && collapse_body.length === 1){
+                    h3s[0].style.cursor = "pointer";    
+                    
+                    if(this._default === this._elements.length){
+                        collapse_body[0].style.visibility = "visible";
+                      collapse_body[0].style.height = collapse_body[0].scrollHeight+"px"
+                    }else{
+                        collapse_body[0].style.height = "0px";
+                      collapse_body[0].style.visibility = "hidden";    
+                    }
+                    this._elements[this._elements.length] = collapse_div;
+                }                
+            }
+        }
+    }
+	
+    Collapse.prototype.open = function(elm){
+        elm.style.visibility = "visible";    
+    //    elm.style.visibility = "hidden";
+        elm.style.height = elm.scrollHeight + "px"
+        
+    }
+    Collapse.prototype.close = function(elm){
+      elm.style.height = "0px";
+      elm.style.visibility = "hidden";
+    }
+    Collapse.prototype.isOpen = function(elm){    
+    
+     return elm.style.visibility === "visible"   
+	//	return elm.style.visibility === "hidden"
+    }
+    
+    Collapse.prototype.getCurrent = function(header){
+        var cur ;
+        if(window.addEventListener){
+            cur = header.parentNode
+        }else{
+            cur = header.parentElement
+        }
+        return cur.getElementsByClassName("collapse_body")[0]
+        }
+    
+    Collapse.prototype.toggleDisplay = function(header){
+        
+        var cur = this.getCurrent(header)
+        //console.log(cur)
+        if(this.isOpen(cur)){
+            this.close(cur);
+        }else{
+            this.open(cur);
+        }        
+        if(this._previous){
+            for(var i=0;i<this._elements.length;i++){
+                if(this._elements[i] !== (cur.parentNode||cur.parentElement)){                
+                    var collapse_body = this._elements[i].getElementsByClassName("collapse_body");
+                    collapse_body[0].style.height = "0px";
+                    collapse_body[0].style.visibility = "hidden";
+                            
+                }
+            }
+        }
+    }    
+    
+    Collapse.prototype.init = function(){        
+        var instance = this;
+        this.collectElementbyClass();
+        if(this._elements.length === 0){
+            return;
+        }
+        
+        for(var i=0;i<this._elements.length;i++){
+            var h3s = this._elements[i].getElementsByTagName("h3");            
+            if(window.addEventListener){
+                h3s[0].addEventListener("click",function(){ instance.toggleDisplay(this);},false); 
+            }else{
+                h3s[0].onclick = function(){instance.toggleDisplay(this);}
+            }
+        }
+    }
+    
+//传参
+ var myCollapse = new Collapse("collapseDiv",true);
+ 
+</script>
+</html>
